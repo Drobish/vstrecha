@@ -1,0 +1,678 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Меню</title>
+	<link rel="stylesheet" href="style/shortv.css">
+	<link rel="stylesheet" href="style/menu.css">
+    <script src="script/jquery-1.12.4.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+	<script src="script/jquery.min.js"></script>
+</head>
+<body>
+	<div class="site-wrapper">
+        <header role="banner" class="site-header">
+            <div class="header_block in">
+                <nav class="menuTopWrapper">
+                    <ul class="menuTopWrapper__menuTop">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="novosti.html">Новости</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="cakes.html" >Заказ тортов</a>
+                        <li><a href="gallery.html" >Галерея</a></li>
+                    </ul>				
+                </nav>
+                <div class="top_block flex_container">
+                    <div class="logo_block">
+                        <a  class="site-header__logo">Встреча</a>
+                        <div class="site-header__descriptor">Народный ресторан</div>
+                    </div>
+                    <div class="cont_block">
+                        <div class="site-header__contacts">
+                            <div><a href="tel:2-10-17">2-10-17</a></div>
+                        </div>
+                        <div class="site-header__time">
+                            <span>пн-чт</span> 9:00-18:00<br/>
+                            <span>пт</span> 9:00-01:00<br/>
+                            <span>сб</span> 10:00-16:00, 18:00-01:00<br/>
+                            <span>вс </span><a>выходной</a></div>
+                        </div>
+                        <div class="site-header__address">пос. Вожега,</br> ул. Октябрьская,</br> д. 12</div>
+                        <div class="menu-button"></div>
+                </div>
+            </div>
+    </header>
+</div>
+		<!-- .site-header -->
+		<div class="site-container">
+						<main role="main" class="site-main">
+				<div class="site-main__inner">
+					
+			 <div class="Delicious_area">
+        <div class="container">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-50">
+                        <h3>Меню</h3>
+                    </div>
+                </div>
+            <div class="tablist_menu">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <ul class="nav justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    <div class="single_menu text-center">
+                                           <div class="icon">
+                                               <i class="snacks"></i>
+                                           </div>
+                                           <h4>Закуски</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                    <div class="single_menu text-center">
+                                        <div class="icon">
+                                            <i class="salats"></i>
+                                        </div>
+                                        <h4>Салаты</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile1-tab" data-toggle="pill" href="#pills-profile1" role="tab" aria-controls="pills-profile1" aria-selected="false">
+                                    <div class="single_menu text-center">
+                                        <div class="icon">
+                                            <i class="garnish"></i>
+                                        </div>
+                                        <h4>Гарниры</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile2-tab" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile2" aria-selected="false">
+                                    <div class="single_menu text-center">
+                                        <div class="icon">
+                                            <i class="soup"></i>
+                                        </div>
+                                        <h4>Суп</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile3-tab" data-toggle="pill" href="#pills-profile3" role="tab" aria-controls="pills-profile3" aria-selected="false">
+                                    <div class="single_menu text-center">
+                                        <div class="icon">
+                                            <i class="gorachee"></i>
+                                        </div>
+                                        <h4>Горячее</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile4-tab" data-toggle="pill" href="#pills-profile4" role="tab" aria-controls="pills-profile4" aria-selected="false">
+                                    <div class="single_menu text-center">
+                                        <div class="icon">
+                                            <i class="rolls"></i>
+                                        </div>
+                                        <h4>Роллы</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                    <div class="single_menu text-center">
+                                        <div class="icon">
+                                            <i class="pizza"></i>
+                                        </div>
+                                        <h4>Пицца</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center">
+                                <div class="info">
+                                    <h3>Закуска "Русская"</h3>
+                                    <p>Шпик соленый, бекон п/к, колбаса п/к, огурцы соленые, зелень, лук зелёный, гренки</p>
+                                    <span>270р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center">
+                                <div class="info">
+                                    <h3>Овощная тарелка</h3>
+                                    <p>Огурцы, томаты, болгарский перец, редис, зелень, масло оливковое</p>
+                                    <span>220р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Мясная тарелка</h3>
+                                    <p>Бекон п/к, ветчина, колбаса п/к, огурцы, томаты, зелень</p>
+                                    <span>290р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Сырная тарелка</h3>
+                                    <p>Сыр Ларец в ассортименте, сыр Гауда, сыр Моцарелла, мёд, виноград</p>
+                                    <span>390р</span>
+                                </div>
+                            </div>	
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Фруктовая тарелка</h3>
+                                    <p>Мандарин, виноград, яблоко, груша</p>
+                                    <span>250р</span>
+                                </div>
+                            </div>				
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center">
+                                <div class="info">
+                                    <h3>Гренки</h3>
+                                    <p>Хлеб жареный, сыр Моцарелла, зелень, соус Ранч</p>
+                                    <span>90р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Сырные палочки</h3>
+                                    <p>Сыр Моцарелла, соус брусничный</p>
+                                    <span>150р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Стрипсы куриные</h3>
+                                    <p>Филе куриное в панировке</p>
+                                    <span>130р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Крылья куриные в медово-горчичном соусе</h3>
+                                    <p>Крылья куриные в маринаде, салат Айсберг, томаты Черри, лимон</p>
+                                    <span>270р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Треска в сырной шубке</h3>
+                                    <p>Филе трески, сыр Гауда, майонез</p>
+                                    <span>180р</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="section_title text-center mb-50">
+                            <h4>По предзаказу</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center">
+                                <div class="info">
+                                    <h3>Рулет шпинатный с солёным лососем и сливосным сыром</h3>
+                                    <p>Шпинат, сфр творожный, семга-филе, сыр Моцарелла, зелень</p>
+                                    <span>390р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center">
+                                <div class="info">
+                                    <h3>Брускетты с копчёной курой и Пармезаном</h3>
+                                    <p>Багет, соус Ранч, салат Айсберг, томаты, грудка куриная п/к, сыр Пармезан, зелень</p>
+                                    <span>200р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Брускетты с копчённостями и огурцом</h3>
+                                    <p>Багет, огурец, бекон п/к, томаты Черри, зелень</p>
+                                    <span>140р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Брускетты с курой и грибами</h3>
+                                    <p>Багет, лук репчатый, шампиньоны жареные, грудка куриная жареная, сыр Пармезан, зелень </p>
+                                    <span>250р</span>
+                                </div>
+                            </div>					
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> 
+                                <div class="info">
+                                    <h3>Брускетты со снежным крабом и томатом</h3>
+                                    <p>Багет, снежный краб, томаты, лук зелёный, кунжут</p>
+                                    <span>140р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> 
+                                <div class="info">
+                                    <h3>Бутерброд с сёмгой</h3>
+                                    <p>Багет, семга-филе, огурец, зелень</p>
+                                    <span>99р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> 
+                                <div class="info">
+                                    <h3>Канапе с сельдью и горчицей</h3>
+                                    <p>Гренки, сельдь-филе в/м, огурец соленый, горчица Дижонская, зелень</p>
+                                    <span>120р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> 
+                                <div class="info">
+                                    <h3>Канапе с сёмгой и творожным сыром</h3>
+                                    <p>Гренки, сыр творожный, семга-филе с/с, апельсин, кунжут, зелень</p>
+                                    <span>250р</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Поке-салат</h3>
+                                    <p>Снежный краб, Айсберг, томаты, редис, огурцы, рис Шинаки, соус Том Ям, зелень, кунжут</p>
+                                    <span>180р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Азиатский</h3>
+                                    <p>Язык отварной, фасоль стручковая, перец болгарский, огурцы, капуста Пекинская, лук красный, чеснок, паста Ким-Чи, кунжут</p>
+                                    <span>290р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"><div class="info">
+                                    <h3>Баварский</h3>
+                                    <p>Ветчина, колбаски Охотничьи, бекон п/к, картофель отварной, огруцы солёные, Айсберг, томаты Черри, лук репчатый, соус чесночный, чипсы картофельные</p>
+                                    <span>180р</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Греческий</h3>
+                                    <p>Перец болгарский, томаты, огурцы, лук красный, Айсберг, брынза, маслины, оливковое масло</p>
+                                    <span>230р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Портофино</h3>
+                                    <p>Сёмга-филе с/с, авокадо огурцы, лук красный, Айсберг, брынза, маслины, оливковое масло</p>
+                                    <span>440р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Цезарь с курицей</h3>
+                                    <p>Грудка куриная жареная, Айсберг, гренки Цезарь, томаты Черри, соус Цезарь, сыр Пармезан</p>
+                                    <span>270р</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile1-tab">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Овощи гриль</h3>
+                                    <p>Кабачки, перец болгарский, баклажаны, томаты, лук красный, зелень</p>
+                                    <span>230р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Рагу из овощей</h3>
+                                    <p>Кабачки, перец болгарский, баклажаны, томаты, фасоль стручковая, морковь, чеснок, зелень</p>
+                                    <span>130р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"><div class="info">
+                                    <h3>Картофель по-деревенски</h3>
+                                    <p>Картофель, масло растительное</p>
+                                    <span>80р</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Картофель-фри</h3>
+                                    <p>Картофель-фри, масло фритюрное, соль</p>
+                                    <span>130р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Соус</h3>
+                                    <p>Кетчуп/Сметано-чесночный/Сырный</p>
+                                    <span>15р/15р/20р</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile2-tab">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Солянка мясная</h3>
+                                    <p>Бекон п/к, колбаса варёная, ветчина, сосиски, огурцы солёные, лук репчатый, каперсы, лимон, маслины, зелень, сметана</p>
+                                    <span>280р</span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xl-6 col-md-6 col-lg-6">
+                                <div class="single_delicious d-flex align-items-center"><div class="info">
+                                    <h3>Солянка рыбная</h3>
+                                    <p>Горбуша, треска, семга, картофель, лук репчатый, огурцы солёные, лимон</p>
+                                    <span>180р</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile3" role="tabpanel" aria-labelledby="pills-profile3-tab">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Говядина тушенная с картофельным пюре и маринованным огурчиком</h3>
+                                    <p>Говядина, лук красный, чеснок, томаты Пилатти, томаты, картофельное пюре, маринованный огурчик, лук зелёный, зелень</p>
+                                    <span>360р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Жаркое по-австрийски</h3>
+                                    <p>Филе куриное, свинина-филе, бекон п/к, колбаски Охотничьи, картофель отварной, лук репчатый, чеснок, томаты, зелень</p>
+                                    <span>270р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"><div class="info">
+                                    <h3>Медальоны из свинины с чесночным картофелем и грибным соусом</h3>
+                                    <p>Свинина-филе, картофель отварногй, шампиньоны жареные, лук репчатый, редис, огурец, томаты Черри, зелень</p>
+                                    <span>300р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"><div class="info">
+                                    <h3>Куриный рулет с картофелем и томатным гарниром</h3>
+                                    <p>Филе куриное, сыр Моцарелла, томаты, картофельное пюре, соусиз сладкого перца, зелень</p>
+                                    <span>330р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"><div class="info">
+                                    <h3>Медальоны из курицы с зернистым соусом</h3>
+                                    <p>Филе куриное, кабачки, брокколи, морковь, картофель отварной, томаты Черри, зелень</p>
+                                    <span>300р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center">
+                                <div class="info">
+                                    <h3>Спагетти с куриным филе и шампиньонами</h3>
+                                    <p>Спагетти, филе куриное, шампиньоны жареные, горошек с/м, сыр Пармезан, томаты Черри, зелень</p>
+                                    <span>330р</span>
+                                </div>
+                            </div>
+                             <div class="single_delicious d-flex align-items-center">
+                                <div class="info">
+                                    <h3>Судак, запечённый с томатами в соусе Ранч</h3>
+                                    <p>Судак-филе, томаты, лук репчатый, соус Ранч, сыр Моцарелла, картофель по-деревенски, томаты Черри</p>
+                                    <span>350р</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Свинина "Боярская" с колбасками</h3>
+                                    <p>Свинина-филе, колбаски Охотничьи, картофель отварной, лук репчатый, шампиньоны консервированные, томаты, сыр Моцарелла</p>
+                                    <span>190р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Шницель Венский с картофелем и соусом из сладкого перца</h3>
+                                    <p>Свинина-филе, картофель отварной, соус из сладкого перца, огурчик маринованный,редис, зелень</p>
+                                    <span>290р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Кура с беконом, картофелем в грейви-соусе</h3>
+                                    <p>Филе куриное, бекон п/к, сфр Моцарелла, томаты, лук зелёный, картофель</p>
+                                    <span>330р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Лосось Терияки в фольге с овощами</h3>
+                                    <p>Лосось-филе, брокколи, кабачки, морковь, фасоль стручковая, перец болгарский, лук зелёный, соус Терияки, кунжут</p>
+                                    <span>550р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Самолепные пельмени, запечённые в сметане и сыре</h3>
+                                    <p>Пельмени "Встреча", шампиньоны жареные, сыр Гауда, сметана, зелень</p>
+                                    <span>190р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Самолепные пельмени, запечённые в сметано-грибном соусе</h3>
+                                    <p>Пельмени "Встреча", шампиньоны жареные, чеснок, лук Порей, томаты Черри, зелень</p>
+                                    <span>290р</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile4" role="tabpanel" aria-labelledby="pills-profile4-tab">
+                    <div class="col-xl-12">
+                        <div class="section_title text-center mb-50">
+                            <h4>Классические</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Калифорния с крабом/креветкой/лососем</h3>
+                                    <p>Рис Шинаки, водоросли Нори, сыр творожный, снежный краб/креветка/лосось-филе, авокадо, икра масаго, огурец</p>
+                                    <span>300р/350р/350р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center">
+                                <div class="info">
+                                    <h3>Куммамото</h3>
+                                    <p>Рис Шинаки, водоросли Нори, сыр творожный, лосось х/к, снежный краб, икра масаго, лук зелёный</p>
+                                    <span>300р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Маки с огурцом/крабом/лососем</h3>
+                                    <p>Рис Шинаки, водоросли Нори, огурец/снежный краб/лосось х/к, кунжут/сыр творожный/огурец</p>
+                                    <span>120р/150р/200р</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Филадельфия с лососем</h3>
+                                    <p>Рис Шинаки, водоросли Нори, сыр творожный, лосось-филе, огурец</p>
+                                    <span>390р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Цезарь</h3>
+                                    <p>Рис Шинаки, водоросли Нори, сыр творожный, грудка куриная жареная, Айсберг, томаты, сыр Пармезан, кунжут</p>
+                                    <span>250р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Бекон</h3>
+                                    <p>Рис Шинаки, водоросли Нори, сыр творожный, огурец, бекон п/к, сёмга-филе</p>
+                                    <span>300р</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="section_title text-center mb-50">
+                            <h4>Запечённые</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Агиро</h3>
+                                    <p>Рис Шинаки, водоросли Нори, сыр творожный, угорь, семга х/к, огурец</p>
+                                    <span>450р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center">
+                                <div class="info">
+                                    <h3>Сандзе</h3>
+                                    <p>Рис Шинаки, водоросли Нори, сыр творожный, семга-филе, креветка</p>
+                                    <span>390р</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Хеджу</h3>
+                                    <p>Рис Шинаки, водоросли Нори, огурец, снежный краб, икра масаго</p>
+                                    <span>350р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Запеченный Бекон</h3>
+                                    <p>Рис Шинаки, водоросли Нори, сыр творожный, огурец, бекон п/к, креветка</p>
+                                    <span>390р</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="section_title text-center mb-50">
+                            <h4>Горячие</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Дакота</h3>
+                                    <p>Рис Шинаки, водоросли Нори, сыр творожный, семга-филе, огурец, авокадо</p>
+                                    <span>380р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center">
+                                <div class="info">
+                                    <h3>Идзуми</h3>
+                                    <p>Рис Шинаки, водоросли Нори, сыр творожный, угорь, креветка, снежный краб, лук зелёный</p>
+                                    <span>380р</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Саппоро</h3>
+                                    <p>Рис Шинаки, водоросли Нори, сыр творожный, семга-филе, креветка,снежный краб, огурец</p>
+                                    <span>330р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Фьюжн</h3>
+                                    <p>Рис Шинаки, водоросли Нори, сыр творожный, грудка куриная п/к, огурец</p>
+                                    <span>250р</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Барбекю</h3>
+                                    <p>Язык отварной, грудка куриная жареная, томаты, перец болгарский, лук Порей, сыр Моцарелла, сыр Пармезан, соус томатный, соус из сладкого перца</p>
+                                    <span>590р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Домашняя</h3>
+                                    <p>Колбаса п/к, сосиски, томаты, огурцы солёные, лук красный, сыр Моцарелла, сыр Пармезан, соус томатный</p>
+                                    <span>400р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center">
+                                <div class="info">
+                                    <h3>Маргарита</h3>
+                                    <p>Сыр Моцарелла, томаты, соус томатный</p>
+                                    <span>400р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center">
+                                <div class="info">
+                                    <h3>Мясная</h3>
+                                    <p>Ветчина, бекон п/к, колбаса п/к, колбаски Охотничьи, сосиски, томаты, сыр Моцарелла, соус томатный</p>
+                                    <span>450р</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-6">
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>С ветчиной и грибами</h3>
+                                    <p>Ветчина, шампиньоны, томаты, сыр Моцарелла, соус томатный</p>
+                                    <span>490р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>С копченой курицей</h3>
+                                    <p>Грудка куриная п/к, шампиньоны, томаты, лук Порей, сыр Моцарелла, сыр плавленый, сливки, соус томатный</p>
+                                    <span>490р</span>
+                                </div>
+                            </div>
+                            <div class="single_delicious d-flex align-items-center"> <div class="info">
+                                    <h3>Сырная</h3>
+                                    <p>Сыр Моцарелла, сыр Пармезан, сыр Гауда, соус томатный</p>
+                                    <span>450р</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+					<div class="text_wr">
+				<div class="text_block">
+					<div class="title">Приходите и порадуйте себя хорошей кухней, приятной музыкой, уютным интерьером!</div>
+					<div class="anonce"><p>Приходите и порадуйте себя хорошей кухней, приятной музыкой, уютным интерьером. Мы гарантируем Вам, что в нашем кафе Вы сможете не только сытно покушать, но и весело провести время! Ждем Вас! Кроме всего прочего, в наших стенах Вы можете провести корпоративное мероприятие, детский праздник, тематическую вечеринку, отпраздновать День Рождения или любое иное торжество - мы всегда открыты для подобных предложений.</p></div>
+				</div>
+                </div>
+				<!--<a href="reservation.html" class="more"><span>Забронировать столик</span></a>-->			
+            </div>
+            </div>
+				<footer role="contentinfo" class="site-footer">
+                    
+                    <div class="footer_inner">
+                        <div class="contactMap">
+                        <div class="map-block">
+                                <div class="map-block2">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af04596777eab77d539943c6a0974460804ebf892c943db9dcc2a221d769a4278&amp;width=938&amp;height=400&amp;lang=ru_RU&amp;scroll=true" margin=" 85px auto 28px;"
+          padding=" 50px 45px 70px;"></script>				        
+                            </div>
+                            </div>
+                        </div>
+                        <div class="fcont_block">	
+                            <div class="footer_contacts">
+                                <div class="site-footer__addressFoot"><span>Наш адрес:</span>пос. Вожега, ул. Октябрьская, д. 12</div>
+                                <div class="site-footer__contactsFoot"><span>Наш телефон:</span>2-10-17</div>
+                                <div class="site-footer__timeFoot">
+                                    <span>пн-чт</span> 9:00-18:00<br/>
+                                    <span>пт</span> 9:00-01:00<br/>
+                                    <span>сб</span> 10:00-16:00, 18:00-01:00<br/>
+                                    <span>вс  </span> <a>выходной</a>
+                                </div>
+                                <ul class="links-soc">
+                                    <li><a href="https://vk.com/vstrecha.vozhega"><img src="pics/logo-vk.png" width="50" height="50" alt="Vk"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </body>
+        </html>		
